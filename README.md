@@ -2,6 +2,8 @@
 
 Este repositorio contiene la implementación y el análisis comparativo de diversas estrategias de control inteligente y adaptativo aplicadas al problema de la **asignación dinámica de potencia térmica** para mantener la temperatura deseada en un edificio de cuatro salones acoplados.
 
+![alt text](habitaciones.png)
+
 El proyecto busca evaluar el compromiso entre **confort térmico (velocidad y precisión)** y **eficiencia energética (consumo de potencia)** en sistemas complejos.
 
 ## 📁 Estructura del Repositorio
@@ -18,8 +20,8 @@ sistemas_control_inteligente/
 │   ├── datos_simulacion_ESC.csv
 │   └── datos_simulacion_MPC.csv
 ├── deliveries/                 # Entregas originales del proyecto.
-│   ├── Entrega 1 SDCI.ipynb    # Incluye Control On/Off y Lógica Difusa.
-│   └── Entrega 2 SDCI.ipynb    # (Versión anterior de los controladores principales)
+│   ├── Entrega_1_SDCI.ipynb    # Incluye Control On/Off y Lógica Difusa.
+│   └── Entrega_2_SDCI.ipynb    # (Versión anterior de los controladores principales)
 └── README.md                   # Este archivo.
 ```
 
@@ -29,8 +31,8 @@ El proyecto evalúa cinco estrategias distintas, categorizadas por su complejida
 
 | Estrategia | Enfoque | Archivo de Origen | Complejidad |
 | :--- | :--- | :--- | :--- |
-| **Control ON/OFF** | Clásico (Umbral) | `deliveries/Entrega 1 SDCI.ipynb` | Baja |
-| **Lógica Difusa** | Control Heurístico (Reglas) | `deliveries/Entrega 1 SDCI.ipynb` | Media |
+| **Control ON/OFF** | Clásico (Umbral) | `deliveries/Entrega_1_SDCI.ipynb` | Baja |
+| **Lógica Difusa** | Control Heurístico (Reglas) | `deliveries/Entrega_1_SDCI.ipynb` | Media |
 | **EGT (Teoría de Juegos Evolutiva)** | Descentralizado, Reactivo, Asignación de Recursos | `controllers/Controlador_EGT.ipynb` | Alta |
 | **MPC (Control Predictivo por Modelo)** | Optimización, Proactivo, Seguimiento de Trayectoria | `controllers/Controlador_MPC.ipynb` | Alta |
 | **ESC (Extremum Seeking Control)** | Adaptativo, Búsqueda de Óptimo en Tiempo Real | `controllers/Controlador_ESC.ipynb` | Media/Alta |
@@ -39,7 +41,7 @@ El proyecto evalúa cinco estrategias distintas, categorizadas por su complejida
 
 El análisis se centra en las métricas de desempeño clave obtenidas de las simulaciones.
 
-| Métrica | MPC | EGT | ESC (Un salón) |
+| Métrica | MPC | EGT | ESC (Un Salón) |
 | :--- | :--- | :--- | :--- |
 | **Tiempo Ejecución ($\text{ms}$ / $\text{s}$)** | 35.7 s | **493 ms** | 211 ms |
 | **Energía Total (1h) [MJ]** | 24.73 MJ | **22.32 MJ** | 6.23 MJ |
