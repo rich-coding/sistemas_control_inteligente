@@ -52,7 +52,7 @@ El análisis se centra en las métricas de desempeño clave obtenidas de las sim
 *   **Velocidad (Ts):** El **MPC** domina al alcanzar el estado de referencia en menos de 6 minutos, gracias a su naturaleza proactiva y horizonte de predicción.
 *   **Precisión ($\text{E}_{ss}$):** El **EGT** demuestra la mayor precisión en estado estacionario ($-0.01 \text{ °C}$), un éxito directo de su función de pago asimétrica diseñada para eliminar el error de seguimiento.
 *   **Eficiencia Energética:** La estimación de consumo energético total muestra que el **EGT** es el más eficiente en la simulación de 4 salones ($22.32 \text{ MJ}$). El **ESC** (escalado a 4 salones con $\approx 24.92 \text{ MJ}$) y el **MPC** ($24.73 \text{ MJ}$) muestran una eficiencia similar y son competitivos.
-*   **Consumo Computacional:** El **EGT** ($\mathbf{493 \text{ ms}}$) y el **ESC** (escalado a 4 salones con $\approx $\mathbf{844 \text{ ms}}$) son extremadamente rápidos y eficientes computacionalmente. El **MPC** ($35.7 \text{ s}$) es significativamente más lento debido a la resolución de un problema de optimización cuadrática en cada paso de control, lo que subraya la compensación entre velocidad de ejecución y capacidad predictiva.
+*   **Consumo Computacional:** El **EGT** ($\mathbf{493 \text{ ms}}$) y el **ESC** (escalado a 4 salones con $\approx 844 \text{ ms}$) son extremadamente rápidos y eficientes computacionalmente. El **MPC** ($35.7 \text{ s}$) es significativamente más lento debido a la resolución de un problema de optimización cuadrática en cada paso de control, lo que subraya la compensación entre velocidad de ejecución y capacidad predictiva.
 
 ## 🚀 Uso del Repositorio
 
